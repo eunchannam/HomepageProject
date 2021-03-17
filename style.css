@@ -1,0 +1,70 @@
+*{
+  margin: 0;
+  padding :0;
+}
+body{
+  background-image: url("https://www.schudio.com/wp-content/uploads/2018/09/homepage-background.png?x42787");
+  position: relative;
+}
+section{
+  display: flex;
+  height: 100%;
+  padding-top: 100px;
+}
+#start_bar{
+  color: black;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 30px;
+  display: none;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+.start{
+  animation: change 0.5s 0s 1 ease-in forwards normal;
+}
+.login{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+  width: 70%;
+  margin: 0 auto;
+}
+.login li{
+  width: 200px;
+  height: 40px;
+  margin-right: 15px;
+  text-align: center;
+}
+.login button{
+  width: 100%;
+  height: 100%;
+  padding-top: 2px;
+  border-radius: 10px;
+  background-color: lightpink;
+  font-family: 'Black Han Sans', sans-serif;
+  color: dimgray;
+  font-size: 22px;
+}
+.logo{
+  width: 50%;
+  text-align: right;
+  animation: change 0.5s 0s 1 ease-in forwards normal;
+}
+@keyframes change {
+  from{transform: translateY(300px);}
+  to {transform: translateY(0);}
+}
+.logo img{
+  width: 530px;
+}
+.card{
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 20rem;
+}
