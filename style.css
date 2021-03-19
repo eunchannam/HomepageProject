@@ -6,10 +6,15 @@ body{
   background-image: url("https://www.schudio.com/wp-content/uploads/2018/09/homepage-background.png?x42787");
   position: relative;
 }
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
 section{
   display: flex;
   height: 100%;
-  padding-top: 100px;
 }
 #start_bar{
   color: black;
@@ -19,21 +24,24 @@ section{
   font-size: 30px;
   display: none;
 }
-li{
-  list-style-type: none;
-}
-a{
-  text-decoration: none;
+#nav{
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  width: 0;
+  background-color: gainsboro;
 }
 .start{
   animation: change 0.5s 0s 1 ease-in forwards normal;
+  width: 100%;
 }
 .login{
   display: flex;
-  justify-content: space-around;
   padding-top: 150px;
-  width: 70%;
-  margin: 0 auto;
+  padding-left: 0;
+  width: 21rem;
+  margin-left: 76px;
 }
 .login li{
   width: 200px;
@@ -41,10 +49,10 @@ a{
   margin-right: 15px;
   text-align: center;
 }
-.login button{
-  width: 100%;
-  height: 100%;
-  padding-top: 2px;
+.login a{
+  text-decoration: none;
+  padding: 12px 28px;
+  padding-top: 14px;
   border-radius: 10px;
   background-color: lightpink;
   font-family: 'Black Han Sans', sans-serif;
@@ -52,7 +60,7 @@ a{
   font-size: 22px;
 }
 .logo{
-  width: 50%;
+  width: 80%;
   text-align: right;
   animation: change 0.5s 0s 1 ease-in forwards normal;
 }
@@ -64,7 +72,61 @@ a{
   width: 530px;
 }
 .card{
-  margin: 0 auto;
+  margin-left: 76px;
   margin-top: 30px;
-  width: 20rem;
+  width: 21rem;
+}
+/* mainPage */
+
+header{
+  display: flex;
+  height: 100px;
+  color: white;
+  border-bottom: 3px white solid;
+  margin: 0 10px;
+}
+header i{
+  color: orange;
+  font-size: 60px;
+  padding: 17px 0 0 50px;
+}
+.top-menu{
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 50px;
+}
+.top-menu a{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 20px;
+  font-weight:  100;
+  margin-right: 60px;
+  text-decoration: none;
+  color: gold;
+}
+.field{
+  padding-top: 120px;
+  width: 100%;
+}
+.field_box{
+  display: flex;
+  width: 500px;
+  margin-left: 10px;
+  padding: 0;
+}
+.field_box li{
+  border: 1px white solid;
+  color: white;
+  text-align: center;
+  width: 220px;
+  height: 70px;
+  margin: 20px 20px;
+}
+@media only screen and (max-width: 1050px){
+  .start{display: none;}
+  .field{display: none;}
+  #start_bar{display: block;}
+}
+@media only screen and (max-width: 760px){
+  .top-menu{display: none;}
 }
