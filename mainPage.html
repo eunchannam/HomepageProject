@@ -12,18 +12,18 @@
 </head>
 <body>
 	<ul class="nav flex-column" id="nav">
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">공지사항</a>
-	  </li>
-	  <li class="nav-item">
-	    <a class="nav-link" href="#">다목적 게시판</a>
-	  </li>
 		<li class="nav-item">
-	    <a class="nav-link" href="#">자료실</a>
+	    <a class="nav-link" href="#">마이페이지</a>
 	  </li>
-		<li class="nav-item">
-	    <a class="nav-link" href="#">운영진</a>
-	  </li>
+		<li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">메뉴</a>
+	    <ul class="dropdown-menu">
+	      <li><a class="dropdown-item" href="#">공지사항</a></li>
+	      <li><a class="dropdown-item" href="#">다목적 게시판</a></li>
+	      <li><a class="dropdown-item" href="#">자료실</a></li>
+				<li><a class="dropdown-item" href="#">운영진</a></li>
+	    </ul>
+  	</li>
 		<li class="nav-item dropdown">
 	    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Areas</a>
 	    <ul class="dropdown-menu">
@@ -34,7 +34,7 @@
 				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="#">무덤</a></li>
 	    </ul>
-  </li>
+  	</li>
 	</ul>
 	<a href="#"><i id="start_bar" class="fas fa-bars" onclick=control_nav();></i></a>
 	<header>
